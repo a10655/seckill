@@ -1,5 +1,6 @@
 package org.seckill.bean;
 
+import org.seckill.bean.Seckill;
 import java.util.Date;
 
 public class SuccessKilled {

@@ -1,8 +1,9 @@
 package org.seckill.dao;
 
 import org.apache.ibatis.annotations.Param;
-import org.seckill.bean.Seckill;
 
+
+import org.seckill.bean.Seckill;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
