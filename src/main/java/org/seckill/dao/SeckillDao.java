@@ -14,7 +14,7 @@ import java.util.Map;
 public interface SeckillDao {
 
     /**
-     * 减库存操作
+     * 减库存操作queryById
      * @param seckillId
      * @param killTime
      * @return
