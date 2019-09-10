@@ -33,15 +33,18 @@ CREATE TABLE seckill(
   key idx_create_time(create_time)
 )ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8 COMMENT='秒杀库存表';
 
+--#Invalid default value for 'end_time'
+--#set @@session.explicit_defaults_for_timestamp=on;
+
 
 #--初始化数据
 insert into
   seckill(name, number , start_time, end_time)
 values
-  ('1w mac pro', 20, '2019-09-07 00:00:00', '2019-09-08 00:00:00'),
-  ('5k ipad7', 40, '2019-09-07 00:00:00', '2019-09-08 00:00:00'),
-  ('1k ipad mini4', 60, '2019-09-07 00:00:00', '2019-09-08 00:00:00'),
-  ('500 ipad mini2', 80, '2019-09-07 00:00:00', '2019-09-08 00:00:00');
+  ('1w mac pro', 20, '2019-09-07 00:00:00', '2019-09-18 00:00:00'),
+  ('5k ipad7', 40, '2019-09-07 00:00:00', '2019-09-18 00:00:00'),
+  ('1k ipad mini4', 60, '2019-09-07 00:00:00', '2019-09-18 00:00:00'),
+  ('500 ipad mini2', 80, '2019-09-07 00:00:00', '2019-09-18 00:00:00');
 
 #--秒杀成功明细表
 #--用户登录认证相关的信息
